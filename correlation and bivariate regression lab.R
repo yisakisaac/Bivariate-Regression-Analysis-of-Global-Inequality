@@ -14,5 +14,10 @@ summary(lm(world$gini10~world$gdp_10_thou))
 
 #scatterplot and regression line
 plot(world$gdp_10_thou,world$gini10)
-plot(world$gdp_10_thou,world$gini10,xlab="GDP per capita in $10K",ylab="Income GINI Coefficient",main="Bivariate Regression Analysis of Global Inequality")
+
+plot(world$gdp_10_thou,world$gini10,
+     xlab="GDP per capita in $10K",
+     ylab="Income GINI Coefficient",
+     main="Bivariate Regression Analysis of Global Inequality")
+
 abline(lm(world$gini10~world$gdp_10_thou))
